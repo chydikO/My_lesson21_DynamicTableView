@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  AddDeleteCellListController.swift
 //  My_lesson21_DynamicTableView
 //
 //  Created by OlegChudnovskiy on 08.06.2020.
@@ -8,13 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class AddDeleteCellListController: TableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
-
-
 }
-

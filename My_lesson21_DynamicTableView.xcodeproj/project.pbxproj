@@ -8,20 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		68612F81248EB30100F5AE64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68612F80248EB30100F5AE64 /* AppDelegate.swift */; };
-		68612F85248EB30100F5AE64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68612F84248EB30100F5AE64 /* ViewController.swift */; };
 		68612F88248EB30100F5AE64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68612F86248EB30100F5AE64 /* Main.storyboard */; };
 		68612F8A248EB30600F5AE64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68612F89248EB30600F5AE64 /* Assets.xcassets */; };
 		68612F8D248EB30600F5AE64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68612F8B248EB30600F5AE64 /* LaunchScreen.storyboard */; };
+		68612F9C248EB59400F5AE64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68612F9B248EB59400F5AE64 /* ViewController.swift */; };
+		68612F9E248EB5B900F5AE64 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68612F9D248EB5B900F5AE64 /* NavigationController.swift */; };
+		68612FA0248EB6DE00F5AE64 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68612F9F248EB6DE00F5AE64 /* TabBarController.swift */; };
+		68612FA2248EB72600F5AE64 /* DropDownListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68612FA1248EB72600F5AE64 /* DropDownListController.swift */; };
+		68612FA4248EB76B00F5AE64 /* AddDeleteCellListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68612FA3248EB76B00F5AE64 /* AddDeleteCellListController.swift */; };
+		68612FA6248EB78D00F5AE64 /* EditingListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68612FA5248EB78D00F5AE64 /* EditingListController.swift */; };
+		68612FAA248EB81000F5AE64 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68612FA9248EB81000F5AE64 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		68612F7D248EB30100F5AE64 /* My_lesson21_DynamicTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = My_lesson21_DynamicTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68612F80248EB30100F5AE64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		68612F84248EB30100F5AE64 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		68612F87248EB30100F5AE64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		68612F89248EB30600F5AE64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68612F8C248EB30600F5AE64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		68612F8E248EB30600F5AE64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68612F9B248EB59400F5AE64 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		68612F9D248EB5B900F5AE64 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		68612F9F248EB6DE00F5AE64 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		68612FA1248EB72600F5AE64 /* DropDownListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownListController.swift; sourceTree = "<group>"; };
+		68612FA3248EB76B00F5AE64 /* AddDeleteCellListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDeleteCellListController.swift; sourceTree = "<group>"; };
+		68612FA5248EB78D00F5AE64 /* EditingListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditingListController.swift; sourceTree = "<group>"; };
+		68612FA9248EB81000F5AE64 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +66,92 @@
 		68612F7F248EB30100F5AE64 /* My_lesson21_DynamicTableView */ = {
 			isa = PBXGroup;
 			children = (
+				68612F95248EB44D00F5AE64 /* Model */,
+				68612F94248EB44700F5AE64 /* UI */,
 				68612F80248EB30100F5AE64 /* AppDelegate.swift */,
-				68612F84248EB30100F5AE64 /* ViewController.swift */,
 				68612F86248EB30100F5AE64 /* Main.storyboard */,
 				68612F89248EB30600F5AE64 /* Assets.xcassets */,
 				68612F8B248EB30600F5AE64 /* LaunchScreen.storyboard */,
 				68612F8E248EB30600F5AE64 /* Info.plist */,
 			);
 			path = My_lesson21_DynamicTableView;
+			sourceTree = "<group>";
+		};
+		68612F94248EB44700F5AE64 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				68612FA7248EB7BD00F5AE64 /* Views */,
+				68612F9A248EB50000F5AE64 /* AddDeleteCellList */,
+				68612F99248EB4F100F5AE64 /* EditingList */,
+				68612F98248EB49A00F5AE64 /* DropDownList */,
+				68612F97248EB46A00F5AE64 /* TabBar */,
+				68612F96248EB46400F5AE64 /* Base */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		68612F95248EB44D00F5AE64 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		68612F96248EB46400F5AE64 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				68612F9B248EB59400F5AE64 /* ViewController.swift */,
+				68612F9D248EB5B900F5AE64 /* NavigationController.swift */,
+				68612FA9248EB81000F5AE64 /* TableViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		68612F97248EB46A00F5AE64 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				68612F9F248EB6DE00F5AE64 /* TabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		68612F98248EB49A00F5AE64 /* DropDownList */ = {
+			isa = PBXGroup;
+			children = (
+				68612FA1248EB72600F5AE64 /* DropDownListController.swift */,
+			);
+			path = DropDownList;
+			sourceTree = "<group>";
+		};
+		68612F99248EB4F100F5AE64 /* EditingList */ = {
+			isa = PBXGroup;
+			children = (
+				68612FA5248EB78D00F5AE64 /* EditingListController.swift */,
+			);
+			path = EditingList;
+			sourceTree = "<group>";
+		};
+		68612F9A248EB50000F5AE64 /* AddDeleteCellList */ = {
+			isa = PBXGroup;
+			children = (
+				68612FA3248EB76B00F5AE64 /* AddDeleteCellListController.swift */,
+			);
+			path = AddDeleteCellList;
+			sourceTree = "<group>";
+		};
+		68612FA7248EB7BD00F5AE64 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				68612FA8248EB7C200F5AE64 /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		68612FA8248EB7C200F5AE64 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +225,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68612F85248EB30100F5AE64 /* ViewController.swift in Sources */,
+				68612FA4248EB76B00F5AE64 /* AddDeleteCellListController.swift in Sources */,
+				68612F9C248EB59400F5AE64 /* ViewController.swift in Sources */,
+				68612FA0248EB6DE00F5AE64 /* TabBarController.swift in Sources */,
+				68612FAA248EB81000F5AE64 /* TableViewController.swift in Sources */,
+				68612F9E248EB5B900F5AE64 /* NavigationController.swift in Sources */,
 				68612F81248EB30100F5AE64 /* AppDelegate.swift in Sources */,
+				68612FA6248EB78D00F5AE64 /* EditingListController.swift in Sources */,
+				68612FA2248EB72600F5AE64 /* DropDownListController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
