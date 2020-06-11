@@ -10,9 +10,13 @@ import UIKit
 
 class EditingListController: TableViewController {
 
+    override func setup() {
+        super.setup()
+        title = "Editing List"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
 }

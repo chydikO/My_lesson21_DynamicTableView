@@ -10,9 +10,12 @@ import UIKit
 
 class AddDeleteCellListController: TableViewController {
 
+    override func setup() {
+        super.setup()
+        title = "Add / Delete Cell"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 }
