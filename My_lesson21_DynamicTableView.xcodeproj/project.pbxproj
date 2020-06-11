@@ -66,9 +66,9 @@
 		68612F7F248EB30100F5AE64 /* My_lesson21_DynamicTableView */ = {
 			isa = PBXGroup;
 			children = (
+				68612F80248EB30100F5AE64 /* AppDelegate.swift */,
 				68612F95248EB44D00F5AE64 /* Model */,
 				68612F94248EB44700F5AE64 /* UI */,
-				68612F80248EB30100F5AE64 /* AppDelegate.swift */,
 				68612F86248EB30100F5AE64 /* Main.storyboard */,
 				68612F89248EB30600F5AE64 /* Assets.xcassets */,
 				68612F8B248EB30600F5AE64 /* LaunchScreen.storyboard */,

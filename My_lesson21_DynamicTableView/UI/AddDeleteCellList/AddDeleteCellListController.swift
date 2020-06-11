@@ -13,6 +13,7 @@ class AddDeleteCellListController: TableViewController {
     override func setup() {
         super.setup()
         title = "Add / Delete Cell"
+        tabBarItem = UITabBarItem(title: "Add/Delete", image: UIImage(), tag: 1)
     }
     
     override func viewDidLoad() {

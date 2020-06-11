@@ -13,8 +13,8 @@ class DropDownListController: TableViewController {
     override func setup() {
         super.setup()
         let _title = "Drop Down Section"
-        tabBarItem = UITabBarItem(title: _title, image: nil, tag: 0)
         title = _title
+        tabBarItem = UITabBarItem(title: "Drop Down", image: UIImage(), tag: 0)
     }
     
     override func viewDidLoad() {
