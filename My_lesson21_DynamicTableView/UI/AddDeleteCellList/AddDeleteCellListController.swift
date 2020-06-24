@@ -21,11 +21,31 @@ class AddDeleteCellListController: TableViewController {
         dataSource.append(contentsOf: [Int.random(in: 0...100),
                                        Int.random(in: 0...100),
                                        Int.random(in: 0...100)])
+        
+        //target - это тот объект у которого #selector будет вызываться
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(AddButtonClicked))
+        self.navigationItem.rightBarButtonItem?.tintColor = .black
+        
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Clear", style: .done, target: self, action: #selector(ClearButtonClicked))
+        self.navigationItem.leftBarButtonItem?.tintColor = .black
     }
     
     //MARK: - Actions
-    @IBAction private func AddButtonClicked() {
+    @objc private func AddButtonClicked() {
+        let insertIndex = 0
+        dataSource.insert(Int.random(in: 0...100), at: insertIndex)
+
+        // 1
+        //tableView?.reloadData()
         
+        // 2
+        let indexPath = IndexPath(row: insertIndex, section: 0)
+        tableView?.insertRows(at: [indexPath], with: .automatic)
+    }
+    
+    @objc private func ClearButtonClicked() {
+        dataSource.removeAll()
+        tableView?.reloadData()
     }
     
     //MARK: -UITableViewDataSource
