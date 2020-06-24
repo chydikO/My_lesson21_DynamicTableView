@@ -42,7 +42,7 @@ class TableViewController: ViewController, UITableViewDataSource, UITableViewDel
         
         self.tableView?.dataSource = self
         self.tableView?.delegate = self
-        self.tableView?.separatorStyle = .none
+        self.tableView?.separatorStyle = .singleLine
         self.tableView?.backgroundColor = .none
         
         registerCells()

@@ -72,10 +72,44 @@
                     <view key="view" contentMode="scaleToFill" id="4Sf-db-L9J">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sbb-Ak-Pcr">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell_id" textLabel="62f-4M-moP" style="IBUITableViewCellStyleDefault" id="7cr-dm-lOQ">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7cr-dm-lOQ" id="e7g-vS-xqV">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="62f-4M-moP">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="sbb-Ak-Pcr" firstAttribute="leading" secondItem="M7Z-Q5-Hga" secondAttribute="leading" id="5OO-5h-To3"/>
+                            <constraint firstItem="M7Z-Q5-Hga" firstAttribute="trailing" secondItem="sbb-Ak-Pcr" secondAttribute="trailing" id="XCy-mg-qU2"/>
+                            <constraint firstItem="M7Z-Q5-Hga" firstAttribute="bottom" secondItem="sbb-Ak-Pcr" secondAttribute="bottom" id="eUp-8b-AS1"/>
+                            <constraint firstItem="sbb-Ak-Pcr" firstAttribute="top" secondItem="M7Z-Q5-Hga" secondAttribute="top" id="giX-cO-emR"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="M7Z-Q5-Hga"/>
                     </view>
                     <navigationItem key="navigationItem" id="sCj-CN-kxj"/>
+                    <connections>
+                        <outlet property="tableView" destination="sbb-Ak-Pcr" id="kF9-WK-HCN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u3S-gd-VnZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
