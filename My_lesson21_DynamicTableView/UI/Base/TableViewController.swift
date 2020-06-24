@@ -20,6 +20,7 @@ class TableViewController: ViewController, UITableViewDataSource, UITableViewDel
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
+    
     }
     
     //MARK: -Setup TableView

@@ -56,13 +56,20 @@ class AddDeleteCellListController: TableViewController {
            }
            return cell
        }
-       //---------------------Remove red buttom while tableView editing
-       func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
-           return .none
-       }
-       
-       func tableView(_ tableView: UITableView, shouldIndentWhileEditingRowAt indexPath: IndexPath) -> Bool {
-           return false
-       }
-       //---------------------Remove red buttom while tableView editing
+    
+    //MARK - Delete cell from tableView
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            dataSource.remove(at: indexPath.row)
+            //1.
+            //tableView.reloadData()
+            
+            //2
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+        }
+    }
 }

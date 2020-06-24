@@ -21,6 +21,7 @@ class TabBarController: UITabBarController {
         setViewControllers([NavigationController(rootViewController: controller1),
                             NavigationController(rootViewController: controller2),
                             NavigationController(rootViewController: controller3)], animated: false)
+        selectedIndex = 1
     }
     
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
