@@ -9,7 +9,13 @@
 import UIKit
 
 class AddDeleteCellListController: TableViewController {
-
+    
+    private let initDataSource = [Int.random(in: 0...100),
+                                  Int.random(in: 0...100),
+                                  Int.random(in: 0...100)]
+    
+    private let activityIndicatorView = UIActivityIndicatorView(style: .large)
+    
     override func setup() {
         super.setup()
         title = "Add / Delete Cell"
@@ -18,20 +24,29 @@ class AddDeleteCellListController: TableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        dataSource.append(contentsOf: [Int.random(in: 0...100),
-                                       Int.random(in: 0...100),
-                                       Int.random(in: 0...100)])
+        dataSource.append(contentsOf: initDataSource)
         
         //target - это тот объект у которого #selector будет вызываться
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(AddButtonClicked))
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addButtonClicked))
         self.navigationItem.rightBarButtonItem?.tintColor = .black
         
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Clear", style: .done, target: self, action: #selector(ClearButtonClicked))
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Clear", style: .done, target: self, action: #selector(clearButtonClicked))
         self.navigationItem.leftBarButtonItem?.tintColor = .black
+        
+        let refrechControll = UIRefreshControl()
+        refrechControll.addTarget(self, action: #selector(renewData), for: UIControl.Event.valueChanged)
+        tableView?.refreshControl = refrechControll
+        
+        self.view.addSubview(activityIndicatorView)
+        
+        activityIndicatorView.translatesAutoresizingMaskIntoConstraints = false
+        activityIndicatorView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor, constant: 0).isActive = true
+        activityIndicatorView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor, constant: 0).isActive = true
+        activityIndicatorView.isHidden = true
     }
     
     //MARK: - Actions
-    @objc private func AddButtonClicked() {
+    @objc private func addButtonClicked() {
         let insertIndex = 0
         dataSource.insert(Int.random(in: 0...100), at: insertIndex)
 
@@ -43,9 +58,25 @@ class AddDeleteCellListController: TableViewController {
         tableView?.insertRows(at: [indexPath], with: .automatic)
     }
     
-    @objc private func ClearButtonClicked() {
+    @objc private func clearButtonClicked() {
         dataSource.removeAll()
         tableView?.reloadData()
+    }
+    
+    //MARK: - Refresh Data
+    @objc private func renewData () {
+        activityIndicatorView.isHidden = false
+        activityIndicatorView.startAnimating()
+        
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
+            self.dataSource.removeAll()
+            self.dataSource.append(contentsOf: self.initDataSource)
+            self.tableView?.reloadData()
+            self.tableView?.refreshControl?.endRefreshing()
+        }
+        
+        activityIndicatorView.isHidden = true
+        activityIndicatorView.stopAnimating()
     }
     
     //MARK: -UITableViewDataSource
