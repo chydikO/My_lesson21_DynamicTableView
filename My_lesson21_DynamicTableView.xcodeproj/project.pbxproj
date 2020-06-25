@@ -18,6 +18,11 @@
 		68612FA4248EB76B00F5AE64 /* AddDeleteCellListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68612FA3248EB76B00F5AE64 /* AddDeleteCellListController.swift */; };
 		68612FA6248EB78D00F5AE64 /* EditingListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68612FA5248EB78D00F5AE64 /* EditingListController.swift */; };
 		68612FAA248EB81000F5AE64 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68612FA9248EB81000F5AE64 /* TableViewController.swift */; };
+		AFF6351124A5153D00980B93 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF6351024A5153D00980B93 /* Section.swift */; };
+		AFF6351424A516FF00980B93 /* SectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF6351224A516FF00980B93 /* SectionCell.swift */; };
+		AFF6351524A516FF00980B93 /* SectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFF6351324A516FF00980B93 /* SectionCell.xib */; };
+		AFF6351824A5174F00980B93 /* SectionDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF6351624A5174F00980B93 /* SectionDataCell.swift */; };
+		AFF6351924A5174F00980B93 /* SectionDataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFF6351724A5174F00980B93 /* SectionDataCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +39,11 @@
 		68612FA3248EB76B00F5AE64 /* AddDeleteCellListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDeleteCellListController.swift; sourceTree = "<group>"; };
 		68612FA5248EB78D00F5AE64 /* EditingListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditingListController.swift; sourceTree = "<group>"; };
 		68612FA9248EB81000F5AE64 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		AFF6351024A5153D00980B93 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		AFF6351224A516FF00980B93 /* SectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionCell.swift; sourceTree = "<group>"; };
+		AFF6351324A516FF00980B93 /* SectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionCell.xib; sourceTree = "<group>"; };
+		AFF6351624A5174F00980B93 /* SectionDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionDataCell.swift; sourceTree = "<group>"; };
+		AFF6351724A5174F00980B93 /* SectionDataCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionDataCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +103,7 @@
 		68612F95248EB44D00F5AE64 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AFF6351024A5153D00980B93 /* Section.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -150,6 +161,10 @@
 		68612FA8248EB7C200F5AE64 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				AFF6351224A516FF00980B93 /* SectionCell.swift */,
+				AFF6351324A516FF00980B93 /* SectionCell.xib */,
+				AFF6351624A5174F00980B93 /* SectionDataCell.swift */,
+				AFF6351724A5174F00980B93 /* SectionDataCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -212,7 +227,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFF6351924A5174F00980B93 /* SectionDataCell.xib in Resources */,
 				68612F8D248EB30600F5AE64 /* LaunchScreen.storyboard in Resources */,
+				AFF6351524A516FF00980B93 /* SectionCell.xib in Resources */,
 				68612F8A248EB30600F5AE64 /* Assets.xcassets in Resources */,
 				68612F88248EB30100F5AE64 /* Main.storyboard in Resources */,
 			);
@@ -225,8 +242,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFF6351124A5153D00980B93 /* Section.swift in Sources */,
 				68612FA4248EB76B00F5AE64 /* AddDeleteCellListController.swift in Sources */,
 				68612F9C248EB59400F5AE64 /* ViewController.swift in Sources */,
+				AFF6351824A5174F00980B93 /* SectionDataCell.swift in Sources */,
+				AFF6351424A516FF00980B93 /* SectionCell.swift in Sources */,
 				68612FA0248EB6DE00F5AE64 /* TabBarController.swift in Sources */,
 				68612FAA248EB81000F5AE64 /* TableViewController.swift in Sources */,
 				68612F9E248EB5B900F5AE64 /* NavigationController.swift in Sources */,
